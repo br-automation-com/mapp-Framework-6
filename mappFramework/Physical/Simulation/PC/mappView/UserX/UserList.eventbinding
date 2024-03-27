@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="UserList" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="UserList_content.BtnEditUser.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="UserList" widgetRefId="BtnEditUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.UserList.Action" contentRefId="UserList" widgetRefId="UserListManagement">
+            <Method xsi:type="widgets.brease.UserList.Action.OpenModifyUserDialog" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="UserList_content.BtnAddUser.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="UserList" widgetRefId="BtnAddUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.UserList.Action" contentRefId="UserList" widgetRefId="UserListManagement">
+            <Method xsi:type="widgets.brease.UserList.Action.OpenAddUserDialog" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="UserList_content.BtnDeleteUser.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="UserList" widgetRefId="BtnDeleteUser" event="Click" />
+      <Operand datatype="ANY_STRING" name="mySelectedUser">
+        <ReadTarget xsi:type="session.VariableAction.Read" refId="SelectedUserNameMsg">
+          <Method xsi:type="session.VariableAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OKCancel" message="=mySelectedUser" header="$IAT/Widgets/UserList/deleteuser.TITLE" icon="Question" />
+              </Target>
+              <Result>
+                <ResultHandler condition="result = 4">
+                  <Action>
+                    <Target xsi:type="widgets.brease.UserList.Action" contentRefId="UserList" widgetRefId="UserListManagement">
+                      <Method xsi:type="widgets.brease.UserList.Action.DeleteUser" />
+                    </Target>
+                    <Result>
+                      <ResultHandler condition="result = 1">
+                        <Action>
+                          <Target xsi:type="clientSystem.Action">
+                            <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="$IAT/Widgets/UserList/deleteuser.SUCCESS" header="$IAT/Widgets/UserList/deleteuser.TITLE" icon="Information" />
+                          </Target>
+                        </Action>
+                      </ResultHandler>
+                      <ResultHandler condition="result = 104">
+                        <Action>
+                          <Target xsi:type="clientSystem.Action">
+                            <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="$IAT/Widgets/UserList/deleteuser.SESSION_NOT_VALID" header="$IAT/Widgets/UserList/deleteuser.TITLE" icon="Error" />
+                          </Target>
+                        </Action>
+                      </ResultHandler>
+                      <ResultHandler condition="result = 200">
+                        <Action>
+                          <Target xsi:type="clientSystem.Action">
+                            <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="$IAT/Widgets/UserList/deleteuser.USER_DOES_NOT_EXIST" header="$IAT/Widgets/UserList/deleteuser.TITLE" icon="Error" />
+                          </Target>
+                        </Action>
+                      </ResultHandler>
+                      <ResultHandler condition="result = 202">
+                        <Action>
+                          <Target xsi:type="clientSystem.Action">
+                            <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="$IAT/Widgets/UserList/deleteuser.INSUFFICIENT_RIGHTS" header="$IAT/Widgets/UserList/deleteuser.TITLE" icon="Error" />
+                          </Target>
+                        </Action>
+                      </ResultHandler>
+                      <ResultHandler condition="result = 207">
+                        <Action>
+                          <Target xsi:type="clientSystem.Action">
+                            <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="$IAT/Widgets/UserList/deleteuser.CURRENTLY_LOGGED_IN" header="$IAT/Widgets/UserList/deleteuser.TITLE" icon="Error" />
+                          </Target>
+                        </Action>
+                      </ResultHandler>
+                      <ResultHandler condition="result = -3">
+                        <Action>
+                          <Target xsi:type="clientSystem.Action">
+                            <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="$IAT/Widgets/UserList/deleteuser.CANNOT_DELETE_ANONYMOUS" header="$IAT/Widgets/UserList/deleteuser.TITLE" icon="Error" />
+                          </Target>
+                        </Action>
+                      </ResultHandler>
+                    </Result>
+                  </Action>
+                </ResultHandler>
+              </Result>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="UserList_content.BtnExportUser.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="UserList" widgetRefId="BtnExportUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::UserXMgr:UserXMgrUIConnect.Export.ShowDialog">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="UserXExport" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="UserList_content.BtnImportUser.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="UserList" widgetRefId="BtnImportUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::UserXMgr:UserXMgrUIConnect.Import.ShowDialog">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="UserXImport" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="UserXErrorDialog">
+      <Source xsi:type="opcUa.Event" refId="::UserXMgr:UserXMgrUIConnect.MessageBox.LayerStatus" event="ValueChanged" />
+      <Operand datatype="BOOL" name="Status">
+        <ReadTarget xsi:type="session.VariableAction.Read" refId="UserXErrorDialogOpen">
+          <Method xsi:type="session.VariableAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="newValue = 0">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="UserXError" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="UserXErrorDialogOpen">
+                <Method xsi:type="session.VariableAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::UserXMgr:UserXMgrUIConnect.Import.Dialog.Cancel">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="5">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::UserXMgr:UserXMgrUIConnect.Export.Dialog.Cancel">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="newValue = 1 AND Status = true">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.CloseDialog" dialogId="UserXError" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="UserXErrorDialogOpen">
+                <Method xsi:type="session.VariableAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::UserXMgr:UserXMgrUIConnect.Import.Dialog.Cancel">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="5">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::UserXMgr:UserXMgrUIConnect.Export.Dialog.Cancel">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="clientSystem.Event.PasswordChangeRequired">
+      <Source xsi:type="clientSystem.Event" event="PasswordChangeRequired" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenChangePasswordDialog" userName="=userName" showPolicy="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ValueChanged.Event.FileDuplicate" comment="Displays warning about duplicate file">
+      <Source xsi:type="opcUa.Event" refId="::UserXMgr:HmiUserX.Status.FileDuplicate" event="ValueChanged" />
+      <EventHandler condition="newValue = true">
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="UserXDuplicate" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ValueChanged.SessionEvent.UserXRefreshList">
+      <Source xsi:type="session.Event" refId="UserXRefreshList" event="ValueChanged" />
+      <EventHandler condition="newValue = true">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="UserXRefreshList">
+                <Method xsi:type="session.VariableAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="UserX" widgetRefId="ContentCtrlUserList">
+                <Method xsi:type="widgets.brease.ContentControl.Action.UnloadContent" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="UserX" widgetRefId="ContentCtrlUserList">
+                <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="UserList" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="UserList_content.UserListManagement.ItemClick">
+      <Source xsi:type="widgets.brease.UserList.Event" contentRefId="UserList" widgetRefId="UserListManagement" event="ItemClick" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="SelectedUserName">
+            <Method xsi:type="session.VariableAction.SetValueString" value="=UserName" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="clientSystem.Event.LoggedOut">
+      <Source xsi:type="clientSystem.Event" event="LoggedOut" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="$IAT/mappFramework/UserX/LogoutAuto" header="$IAT/mappFramework/UserX/Logout" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="UserList_content.BtnRefreshUser.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="UserList" widgetRefId="BtnRefreshUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="UserXRefreshList">
+            <Method xsi:type="session.VariableAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="HmiUserX.Status.ExportComplete.ValueChanged">
+      <Source xsi:type="opcUa.Event" refId="::UserXMgr:HmiUserX.Status.ExportComplete" event="ValueChanged" />
+      <EventHandler condition="newValue = true">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::UserXMgr:HmiUserX.Status.UserExportDisplayed">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="$IAT/mappFramework/UserX/UserXListExportBody" header="$IAT/mappFramework/UserX/UserXListExportHeader" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

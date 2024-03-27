@@ -2,13 +2,13 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">Axis_content.binding</Object>
-    <Object Type="File">AxisManual_content.binding</Object>
-    <Object Type="File">AxisAuto_content.binding</Object>
-    <Object Type="File">AxisRecipe_content.eventbinding</Object>
-    <Object Type="File">AxisRecipeDialog_New_content.eventbinding</Object>
-    <Object Type="File">AxisRecipeDialog_Edit_content.eventbinding</Object>
-    <Object Type="File">Navigation_content.eventbinding</Object>
-    <Object Type="File">Navigation_content.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">Axis.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">AxisManual.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">AxisAuto.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">AxisRecipe.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">AxisRecipeDialogNew.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">AxisRecipeDialogEdit.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">AxisNavigation.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">AxisNavigation.binding</Object>
   </Objects>
 </Package>

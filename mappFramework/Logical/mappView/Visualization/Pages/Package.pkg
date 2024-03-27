@@ -4,6 +4,6 @@
   <Objects>
     <Object Type="Package" Description="AreaContents">AreaContents</Object>
     <Object Type="Package" Description="mapp Framework content files">mappFrameworkContents</Object>
-    <Object Type="Package" Description="Demo page for the mapp Framework">DemoPage</Object>
+    <Object Type="Package" Description="Demo page for the mapp Framework" TransferedForTargetSourceCompare="true">Demo</Object>
   </Objects>
 </Package>

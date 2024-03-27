@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="UserX" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <Binding mode="oneWay">
+      <Source xsi:type="opcUa" refId="::UserXMgr:UserXMgrUIConnect.MessageBox.ErrorNumber" attribute="value" />
+      <Target xsi:type="snippet" refId="IndexTextSnippetUserXMessage" attribute="value" />
+    </Binding>
+    <Binding mode="oneWay">
+      <Source xsi:type="snippet" refId="IndexTextSnippetUserXMessage" attribute="value" />
+      <Target xsi:type="brease" contentRefId="UserXDialogError" widgetRefId="TextOutUserError" attribute="value" />
+    </Binding>
+    <Binding mode="oneWay">
+      <Source xsi:type="opcUa" refId="::UserXMgr:UserXMgrUIConnect.MessageBox.Type" attribute="value" />
+      <Target xsi:type="snippet" refId="IndexTextSnippetUserXManagerMessage" attribute="value" />
+    </Binding>
+    <Binding mode="oneWay">
+      <Source xsi:type="opcUa" refId="::UserXMgr:UserXMgrUIConnect.MessageBox.ErrorNumber" attribute="value" />
+      <Target xsi:type="snippet" refId="IndexTextSnippetUserXManagerError" attribute="value" />
+    </Binding>
+    <Binding mode="oneWay">
+      <Source xsi:type="session" refId="SelectedUserName" attribute="value" />
+      <Target xsi:type="snippet" refId="SnippetSelectedUsername" attribute="value" />
+    </Binding>
+    <Binding mode="oneWay">
+      <Source xsi:type="snippet" refId="SnippetSelectedUsername" attribute="value" />
+      <Target xsi:type="text" refId="IAT/Widgets/UserList/deleteuser.CONFIRM_DELETE" attribute="value" />
+    </Binding>
+    <Binding mode="oneWay">
+      <Source xsi:type="text" refId="IAT/Widgets/UserList/deleteuser.CONFIRM_DELETE" attribute="value" />
+      <Target xsi:type="session" refId="SelectedUserNameMsg" attribute="value" />
+    </Binding>
+  </Bindings>
+</BindingsSet>

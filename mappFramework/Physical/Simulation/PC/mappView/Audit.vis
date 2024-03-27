@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<vdef:Visualization id="vis_0" autoUpdate="false" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-  <StartPage pageRefId="Demo_page" />
+<vdef:Visualization id="MyVisuAudit" autoUpdate="false" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
+  <StartPage pageRefId="Demo" />
 	<Pages>
-		<Page refId="Demo_page" />
+		<Page refId="Demo" />
 	</Pages>
   <Navigations />
   <BindingsSets>
-		<BindingsSet refId="AuditTrail_content_binding" />
-		<BindingsSet refId="CustomEvents_content_binding" />
-		<BindingsSet refId="AuditQuery_content_binding" />
-		<BindingsSet refId="AuditDialog_ArchiveSettings_content_binding" />
-		<BindingsSet refId="Audit_Navigation_content_binding" />
+		<BindingsSet refId="AuditTrail" />
+		<BindingsSet refId="CustomEvents" />
+		<BindingsSet refId="AuditQuery" />
+		<BindingsSet refId="AuditDialogArchiveSettings" />
+		<BindingsSet refId="AuditNavigation" />
   </BindingsSets>
   <EventBindingsSets>
-		<EventBindingsSet refId="AuditTrail_content_eventbinding" />
-		<EventBindingsSet refId="CustomEvents_content_eventbinding" />
-		<EventBindingsSet refId="Audit_Navigation_content_eventbinding" />
-		<EventBindingsSet refId="AuditDialog_ArchiveSettings_content_eventbinding" />
-		<EventBindingsSet refId="Navigation_content_eventbinding" />
+		<EventBindingsSet refId="AuditTrail" />
+		<EventBindingsSet refId="CustomEvents" />
+		<EventBindingsSet refId="AuditNavigation" />
+		<EventBindingsSet refId="AuditDialogArchiveSettings" />
+		<EventBindingsSet refId="Navigation" />
   </EventBindingsSets>
   <Dialogs>  
-  	<Dialog refId="AuditArchiveSettings_dialog" />
+  	<Dialog refId="AuditArchiveSettings" />
   </Dialogs>
 	<Contents > 
-		<Content refId="Audit_content" />
-		<Content refId="AuditTrail_content" />
-		<Content refId="AuditQuery_content" />
-		<Content refId="CustomEvents_content" />
-		<Content refId="Help_content" />
-		<Content refId="Navigation_content" />
+		<Content refId="Audit" />
+		<Content refId="AuditTrail" />
+		<Content refId="AuditQuery" />
+		<Content refId="CustomEvents" />
+		<Content refId="Help" />
+		<Content refId="Navigation" />
 	</Contents>	
   <SnippetsSets />
 	<VariablesSets />

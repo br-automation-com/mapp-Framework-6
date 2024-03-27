@@ -1,56 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<vdef:Visualization id="MyVisuUserX" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-	<StartPage pageRefId="Demo_page" />
+<vdef:Visualization id="MyVisuUserX" autoUpdate="false" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
+	<StartPage pageRefId="Demo" />
     <Pages>
-        <Page refId="Demo_page" />
+        <Page refId="Demo" />
     </Pages>
 	<Navigations>
 		<!--<Navigation refId="" />-->
 	</Navigations>  
 	<BindingsSets>
-        <BindingsSet refId="UserX_content_binding" />
-        <BindingsSet refId="UserXDialog_Export_content_binding" />	
-        <BindingsSet refId="UserXDialog_Import_content_binding" />	
-		<BindingsSet refId="UserXDialog_Error_content_binding" />
-		<BindingsSet refId="UserX_Navigation_content_binding" />
-		<BindingsSet refId="UserXDialog_Duplicate_content_binding" />
+        <BindingsSet refId="UserX" />
+        <BindingsSet refId="UserXDialogExport" />
+        <BindingsSet refId="UserXDialogImport" />
+		<BindingsSet refId="UserXDialogError" />
+		<BindingsSet refId="UserXNavigation" />
+		<BindingsSet refId="UserXDialogDuplicate" />
 	</BindingsSets>
     <EventBindingsSets> 
-		<EventBindingsSet refId="UserList_content_eventbinding" />
-        <EventBindingsSet refId="UserXDialog_Export_content_eventbinding" />
-		<EventBindingsSet refId="UserXDialog_Import_content_eventbinding" />
-		<EventBindingsSet refId="UserXDialog_Duplicate_content_eventbinding" />
-		<EventBindingsSet refId="UserXDialog_Disabled_content_eventbinding" />
-		<EventBindingsSet refId="UserX_Navigation_content_eventbinding" />
-		<EventBindingsSet refId="Navigation_content_eventbinding" />
+		<EventBindingsSet refId="UserList" />
+        <EventBindingsSet refId="UserXDialogExport" />
+		<EventBindingsSet refId="UserXDialogImport" />
+		<EventBindingsSet refId="UserXDialogDuplicate" />
+		<EventBindingsSet refId="UserXDialogDisabled" />
+		<EventBindingsSet refId="UserXNavigation" />
+		<EventBindingsSet refId="Navigation" />
 	</EventBindingsSets>
     <Dialogs>
-        <Dialog refId="UserXLogin_dialog" />
-		<Dialog refId="UserXError_dialog" />
-		<Dialog refId="UserXExport_dialog" />
-		<Dialog refId="UserXImport_dialog" />
-		<Dialog refId="UserXDuplicate_dialog" />
-		<Dialog refId="UserXDisabled_dialog" />
+        <Dialog refId="UserXLogin" />
+		<Dialog refId="UserXError" />
+		<Dialog refId="UserXExport" />
+		<Dialog refId="UserXImport" />
+		<Dialog refId="UserXDuplicate" />
+		<Dialog refId="UserXDisabled" />
     </Dialogs>
     <Contents > 
-		<Content refId="UserX_content" />
-		<Content refId="UserList_content" />
-		<Content refId="UserXDialog_Login_content" />
-		<Content refId="UserXDialog_Error_content" />  
-		<Content refId="UserXDialog_Export_content" />
-		<Content refId="UserXDialog_Import_content" />
-		<Content refId="UserXDialog_Duplicate_content" />
-		<Content refId="UserXDialog_Disabled_content" />
-		<Content refId="Help_content" />
-		<Content refId="Navigation_content" />
+		<Content refId="UserX" />
+		<Content refId="UserList" />
+		<Content refId="UserXDialogLogin" />
+		<Content refId="UserXDialogError" />  
+		<Content refId="UserXDialogExport" />
+		<Content refId="UserXDialogImport" />
+		<Content refId="UserXDialogDuplicate" />
+		<Content refId="UserXDialogDisabled" />
+		<Content refId="Help" />
+		<Content refId="Navigation" />
     </Contents>	
     <SnippetsSets>
-		<SnippetsSet refId="User_snippets" />
+		<SnippetsSet refId="User" />
     </SnippetsSets>
     <ExpressionsSets>
     </ExpressionsSets>
     <VariablesSets>
-		<VariablesSet refId="UserX_svar" />
+		<VariablesSet refId="UserX" />
     </VariablesSets>
     <StartTheme themeRefId="BuRThemeFlat1" />
 	<Themes>

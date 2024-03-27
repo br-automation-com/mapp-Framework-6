@@ -2,9 +2,9 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">PackML_content.binding</Object>
-    <Object Type="File">PackML_content.eventbinding</Object>
-    <Object Type="File">Navigation_content.binding</Object>
-    <Object Type="File">Navigation_content.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">PackML.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">PackML.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">PackMLNavigation.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">PackMLNavigation.eventbinding</Object>
   </Objects>
 </Package>

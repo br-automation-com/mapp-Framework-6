@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="RecipeDialogNewMachConfig" guid="fdef4294-4c12-4b50-8848-23b62f30304a" height="400" width="420" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="LabelNewRecipeName" top="345" left="15" width="145" zIndex="0" text="$IAT/mappFramework/Recipe/NewRecipeName" textColor="rgba(137, 137, 137, 1)" fontSize="16px" bold="false" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInNewRecipe" top="340" left="160" width="200" height="40" zIndex="1" borderWidth="0px 0px 0px 6px" backColor="rgba(175, 175, 175, 1)" borderColor="rgba(255, 136, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelMcfg" top="345" left="360" width="60" zIndex="2" text=".mcfg" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpBoxContent" top="0" left="0" width="420" height="325" zIndex="3">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ContentControl" id="ContentCtrlEdit" top="0" left="0" zIndex="0" contentId="RecipeMachConfig" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

@@ -3,6 +3,6 @@
 <Package SubType="DialogPackage" PackageType="DialogPackage" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File" Description="Dialog">FileFIFO.dialog</Object>
-    <Object Type="File">FileDialog_FIFO.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">FileDialogFIFO.content</Object>
   </Objects>
 </Package>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="AuditTrail_content" guid="3717f093-fd33-4318-b784-cacb059c873f" height="620" width="1120" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Content id="AuditTrail" guid="3717f093-fd33-4318-b784-cacb059c873f" height="620" width="1120" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.AuditList" id="AuditList" top="30" left="30" width="865" height="560" zIndex="0" itemsPerPage="50" fontSize="16px">
       <Widgets>

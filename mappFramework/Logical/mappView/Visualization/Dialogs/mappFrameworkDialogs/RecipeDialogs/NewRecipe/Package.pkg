@@ -3,8 +3,8 @@
 <Package SubType="DialogPackage" PackageType="DialogPackage" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File" Description="Dialog">NewRecipe.dialog</Object>
-    <Object Type="File">RecipeDialog_NewPars.content</Object>
-    <Object Type="File">RecipeDialog_NewMachConfig.content</Object>
-    <Object Type="File">RecipeDialog_NewButtons.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">RecipeDialogNewPars.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">RecipeDialogNewMachConfig.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">RecipeDialogNewButtons.content</Object>
   </Objects>
 </Package>

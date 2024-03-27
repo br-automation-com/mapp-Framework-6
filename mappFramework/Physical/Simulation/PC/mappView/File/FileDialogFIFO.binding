@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="FileDialogFIFO" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::FileMgr:HmiFile.Status.DeviceDataProvider" attribute="value" />
+			<Target xsi:type="brease" contentRefId="FileDialogFIFO" widgetRefId="DropDownDevice" attribute="dataProvider" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="SessionVarFifoScanInterval" attribute="value" />
+			<Target xsi:type="brease" contentRefId="FileDialogFIFO" widgetRefId="NumInMinute" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="SessionVarFifoNumOfFiles" attribute="value" />
+			<Target xsi:type="brease" contentRefId="FileDialogFIFO" widgetRefId="NumInMaxNumFiles" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="SessionVarFifoType" attribute="value" />
+			<Target xsi:type="brease" contentRefId="FileDialogFIFO" widgetRefId="DropDownFifoOptions" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="SessionVarFifoDevice" attribute="value" />
+			<Target xsi:type="brease" contentRefId="FileDialogFIFO" widgetRefId="DropDownDevice" attribute="selectedValue" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="SessionVarFifoFolderSize" attribute="value" />
+			<Target xsi:type="brease" contentRefId="FileDialogFIFO" widgetRefId="NumInMaxFolderSize" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="SessionVarFifoDeviceIndex" attribute="value" />
+			<Target xsi:type="brease" contentRefId="FileDialogFIFO" widgetRefId="DropDownDevice" attribute="selectedIndex" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::FileMgr:HmiFile.Status.FifoConfigEnable" attribute="value" />
+			<Target xsi:type="brease" contentRefId="FileDialogFIFO" widgetRefId="BtnFIFOSave" attribute="enable" />
+		</Binding>
+	</Bindings>
+</BindingsSet>

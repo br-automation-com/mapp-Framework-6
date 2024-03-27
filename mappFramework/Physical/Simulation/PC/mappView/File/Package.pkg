@@ -2,13 +2,13 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">File_content.binding</Object>
-    <Object Type="File">File_content.eventbinding</Object>
-    <Object Type="File">FileDialog_Message_dialog_content.binding</Object>
-    <Object Type="File">FileDialog_Message_dialog_content.eventbinding</Object>
-    <Object Type="File">FileDialog_FIFO_dialog_content.binding</Object>
-    <Object Type="File">FileDialog_FIFO_dialog_content.eventbinding</Object>
-    <Object Type="File">Navigation_content.eventbinding</Object>
-    <Object Type="File">Navigation_content.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">File.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">File.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">FileDialogMessage.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">FileDialogMessage.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">FileDialogFIFO.binding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">FileDialogFIFO.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">FileNavigation.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">FileNavigation.binding</Object>
   </Objects>
 </Package>

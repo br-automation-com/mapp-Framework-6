@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package SubType="WidgetsPackage" PackageType="WidgetsPackage" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="Package">AxisControlWidgetLib</Object>
+    <Object Type="Package" TransferedForTargetSourceCompare="true">AxisControlWidgetLib</Object>
     <Object Type="Package">PackMLLib</Object>
     <Object Type="Package">RecipeWidgetsLib</Object>
   </Objects>
