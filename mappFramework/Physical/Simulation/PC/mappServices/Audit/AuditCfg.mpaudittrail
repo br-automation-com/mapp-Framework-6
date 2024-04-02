@@ -8,12 +8,74 @@
     </Group>
     <Group ID="Audit">
       <Group ID="Events">
-        <Property ID="[0]" Value="33" />
-        <Property ID="[1]" Value="2" />
-        <Property ID="[2]" Value="16" />
-        <Property ID="[3]" Value="113" />
-        <Property ID="[4]" Value="48" />
-        <Property ID="[5]" Value="149" />
+        <Property ID="[0]" Value="600" />
+        <Property ID="[1]" Value="100" />
+        <Property ID="[2]" Value="400" />
+        <Property ID="[3]" Value="1150" />
+        <Property ID="[4]" Value="700" />
+        <Property ID="[5]" Value="900" />
+        <Property ID="[6]" Value="901" />
+        <Property ID="[7]" Value="902" />
+        <Property ID="[8]" Value="404" />
+        <Property ID="[9]" Value="500" />
+        <Property ID="[10]" Value="1100" />
+        <Property ID="[11]" Value="1101" />
+        <Property ID="[12]" Value="1102" />
+        <Property ID="[13]" Value="1103" />
+        <Property ID="[14]" Value="1104" />
+        <Property ID="[15]" Value="1105" />
+        <Property ID="[16]" Value="1106" />
+        <Property ID="[17]" Value="1107" />
+        <Property ID="[18]" Value="1108" />
+        <Property ID="[19]" Value="1151" />
+        <Property ID="[20]" Value="1152" />
+        <Property ID="[21]" Value="1153" />
+        <Property ID="[22]" Value="1154" />
+        <Property ID="[23]" Value="1155" />
+        <Property ID="[24]" Value="1156" />
+        <Property ID="[25]" Value="1157" />
+        <Property ID="[26]" Value="701" />
+        <Property ID="[27]" Value="702" />
+        <Property ID="[28]" Value="703" />
+        <Property ID="[29]" Value="704" />
+        <Property ID="[30]" Value="101" />
+        <Property ID="[31]" Value="102" />
+        <Property ID="[32]" Value="103" />
+        <Property ID="[33]" Value="104" />
+        <Property ID="[34]" Value="105" />
+        <Property ID="[35]" Value="106" />
+        <Property ID="[36]" Value="107" />
+        <Property ID="[37]" Value="108" />
+        <Property ID="[38]" Value="150" />
+        <Property ID="[39]" Value="151" />
+        <Property ID="[40]" Value="152" />
+        <Property ID="[41]" Value="153" />
+        <Property ID="[42]" Value="154" />
+        <Property ID="[43]" Value="155" />
+        <Property ID="[44]" Value="156" />
+        <Property ID="[45]" Value="157" />
+        <Property ID="[46]" Value="158" />
+        <Property ID="[47]" Value="159" />
+        <Property ID="[48]" Value="160" />
+        <Property ID="[49]" Value="161" />
+        <Property ID="[50]" Value="162" />
+        <Property ID="[51]" Value="163" />
+        <Property ID="[52]" Value="164" />
+        <Property ID="[53]" Value="165" />
+        <Property ID="[54]" Value="166" />
+        <Property ID="[55]" Value="167" />
+        <Property ID="[56]" Value="168" />
+        <Property ID="[57]" Value="169" />
+        <Property ID="[58]" Value="170" />
+        <Property ID="[59]" Value="171" />
+        <Property ID="[60]" Value="300" />
+        <Property ID="[61]" Value="301" />
+        <Property ID="[62]" Value="302" />
+        <Property ID="[63]" Value="303" />
+        <Property ID="[64]" Value="350" />
+        <Property ID="[65]" Value="351" />
+        <Property ID="[66]" Value="352" />
+        <Property ID="[67]" Value="353" />
       </Group>
       <Selector ID="Memory" Value="0">
         <Property ID="Size" Value="200" />
@@ -21,8 +83,8 @@
         <Property ID="BufferSize" Value="10" />
       </Selector>
       <Group ID="TextSource">
-        <Property ID="DisplayFormat" Value="MpAudit/Display/SysF/Event/Root" />
-        <Property ID="ExportFormat" Value="MpAudit/SysF/Event/Root" />
+        <Property ID="DisplayFormat" Value="{$MpAudit/Display/Event/Root}" />
+        <Property ID="ExportFormat" Value="{$MpAudit/Event/Root}" />
       </Group>
       <Selector ID="Archive" Value="On">
         <Property ID="Mode" Value="0" />
@@ -33,7 +95,7 @@
         <Property ID="RawData" Value="FALSE" />
         <Property ID="FileType" Value="1" />
         <Property ID="Encrypt" Value="TRUE" />
-        <Property ID="PassPhrase" Value="123ABc" Description="Password (or passphrase) for file/archive encryption 123ABc" />
+        <Property ID="PassPhrase" Value="0gdxRZninVUgZjiOx9qhudY29Li9Ve8PiVVCV9MwqXfE=" Description="Password (or passphrase) for file/archive encryption 123ABc" />
       </Group>
     </Group>
     <Group ID="Monitor">

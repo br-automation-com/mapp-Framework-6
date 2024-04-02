@@ -1,7 +1,7 @@
 ACTION ExecuteQuery:
 
 	// Initialize mapp function block
-	QueryUserEvents.MpLink := ADR(gMpLinkAuditTrail);
+	QueryUserEvents.MpLink := ADR(gMpLinkAuditTrail_Query);
 	QueryUserEvents.Enable := TRUE;
 	QueryUserEvents.Name := ADR(HmiAudit.Status.Query.Name);
 	QueryUserEvents.Language := ADR('en');

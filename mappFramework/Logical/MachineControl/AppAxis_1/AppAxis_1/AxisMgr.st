@@ -18,6 +18,7 @@ PROGRAM _INIT
 
 	// Call initialization variables
 	RestorePosition_AppAxis_1;
+	gMpLinkAppAxis_1;
 
 	// Initialize homing mode
 	MpAxisParameters.Homing.Mode := mcHOMING_DEFAULT;

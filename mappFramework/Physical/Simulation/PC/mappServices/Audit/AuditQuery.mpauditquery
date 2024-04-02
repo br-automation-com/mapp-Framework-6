@@ -2,45 +2,11 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
   <Element ID="gMpLinkAuditTrail_Query" Type="mpauditquery">
-    <Group ID="Audit">
-      <Group ID="Events">
-        <Property ID="[0]" Value="33" />
-        <Property ID="[1]" Value="2" />
-        <Property ID="[2]" Value="16" />
-        <Property ID="[3]" Value="113" />
-        <Property ID="[4]" Value="48" />
-        <Property ID="[5]" Value="149" />
-      </Group>
-      <Selector ID="TextSource" Value="TXT">
-        <Property ID="Name" Value="" />
-        <Property ID="OutputFormat" Value="MpAudit/SysF/Event/Root" />
-        <Selector ID="Display" Value="Ne">
-          <Property ID="Format" Value="MpAudit/Display/SysF/Event/Root" />
-        </Selector>
-      </Selector>
-      <Selector ID="Archive" Value="On">
-        <Property ID="Time" Value="57600000" />
-        <Property ID="MaxSize" Value="1" />
-      </Selector>
-      <Group ID="Export">
-        <Property ID="FileType" Value="1" />
-        <Property ID="PassPhrase" Value="123ABc" Description="Password (or passphrase) for file/archive encryption 123ABc" />
-        <Group ID="PDF">
-          <Property ID="OwnerPassword" Value="123ABc" Description="Password needed to change file permissions 123ABc" />
-          <Property ID="UserPassword" Value="" Description="Password needed to view the file (optional) " />
-        </Group>
-      </Group>
-    </Group>
-    <Group ID="Monitor">
-      <Group ID="0">
-        <Property ID="pv" Value="::AuditMgr:VariableMonitorExample" />
-      </Group>
-    </Group>
     <Group ID="Queries">
       <Group ID="0">
         <Property ID="Name" Value="RecipeEvents" />
-        <Property ID="Component" Value="gMpLinkAuditTrail" />
         <Property ID="Update" Value="::AuditMgr:AuditQuery.UpdateCountRecipe" />
+        <Property ID="Component" Value="gMpLinkAuditTrail" />
         <Group ID="SELECT">
           <Group ID="0">
             <Property ID="Column" Value="op" />
@@ -60,18 +26,27 @@
           </Group>
         </Group>
         <Group ID="WHERE">
+          <Property ID="Connect" Value="AND" />
           <Group ID="0">
             <Property ID="Column" Value="ev" />
-            <Selector ID="CompareTo">
-              <Property ID="Value" Value="48" />
+            <Property ID="Operator" Value="ge" />
+            <Selector ID="CompareTo" Value="Value">
+              <Property ID="Value" Value="700" />
+            </Selector>
+          </Group>
+          <Group ID="1">
+            <Property ID="Column" Value="ev" />
+            <Property ID="Operator" Value="lt" />
+            <Selector ID="CompareTo" Value="Value">
+              <Property ID="Value" Value="750" />
             </Selector>
           </Group>
         </Group>
       </Group>
       <Group ID="1">
         <Property ID="Name" Value="UserEvents" />
-        <Property ID="Component" Value="gMpLinkAuditTrail" />
         <Property ID="Update" Value="::AuditMgr:AuditQuery.UpdateCount" />
+        <Property ID="Component" Value="gMpLinkAuditTrail" />
         <Group ID="SELECT">
           <Group ID="0">
             <Property ID="Column" Value="op" />
@@ -91,15 +66,23 @@
           </Group>
         </Group>
         <Group ID="WHERE">
+          <Property ID="Connect" Value="AND" />
           <Group ID="0">
             <Property ID="Column" Value="ev" />
-            <Selector ID="CompareTo">
-              <Property ID="Value" Value="2" />
+            <Property ID="Operator" Value="ge" />
+            <Selector ID="CompareTo" Value="Value">
+              <Property ID="Value" Value="100" />
+            </Selector>
+          </Group>
+          <Group ID="1">
+            <Property ID="Column" Value="ev" />
+            <Property ID="Operator" Value="lt" />
+            <Selector ID="CompareTo" Value="Value">
+              <Property ID="Value" Value="400" />
             </Selector>
           </Group>
         </Group>
       </Group>
     </Group>
-    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>

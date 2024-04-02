@@ -8,7 +8,7 @@
     </Group>
     <Group ID="Audit">
       <Group ID="Events">
-        <Property ID="[0]" Value="18" />
+        <Property ID="[0]" Value="402" />
       </Group>
       <Selector ID="Memory" Value="0">
         <Property ID="Size" Value="200" />

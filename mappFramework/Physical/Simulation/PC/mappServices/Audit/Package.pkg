@@ -3,9 +3,8 @@
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File">UnitCfg.mpcomunit</Object>
-    <Object Type="File" Description="Migrated from AuditCfg.mpaudittrail (mapp Services Version 5)">AuditCfg_T.mpaudittrail</Object>
-    <Object Type="File" Description="Migrated from AuditCfg.mpaudittrail (mapp Services Version 5)">AuditCfg_Q.mpauditquery</Object>
-    <Object Type="File" Description="Migrated from CustomCfg.mpaudittrail (mapp Services Version 5)">CustomCfg_.mpaudittrail</Object>
-    <Object Type="File" Description="Migrated from CustomCfg.mpaudittrail (mapp Services Version 5)">CustomCf_1.mpauditquery</Object>
+    <Object Type="File" Description="Migrated from AuditCfg.mpaudittrail (mapp Services Version 5)" TransferedForTargetSourceCompare="true">AuditCfg.mpaudittrail</Object>
+    <Object Type="File" Description="Migrated from AuditCfg.mpaudittrail (mapp Services Version 5)" TransferedForTargetSourceCompare="true">AuditQuery.mpauditquery</Object>
+    <Object Type="File" Description="Migrated from CustomCfg.mpaudittrail (mapp Services Version 5)" TransferedForTargetSourceCompare="true">CustomCfg.mpaudittrail</Object>
   </Objects>
 </Package>
