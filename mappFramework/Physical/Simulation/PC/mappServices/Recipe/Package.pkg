@@ -2,8 +2,8 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Description="Migrated from RecipeXML.mprecipexml (mapp Services Version 5)">RecipeXML.mprecipexml</Object>
-    <Object Type="File" Description="Migrated from RecipeCSV.mprecipecsv (mapp Services Version 5)">RecipeCSV.mprecipecsv</Object>
-    <Object Type="File">RecipeFile.mpfilemanagerui</Object>
+    <Object Type="File" Description="Core XML based recipe configuration">RecipeXML.mprecipexml</Object>
+    <Object Type="File" Description="Core CSV based recipe configuration">RecipeCSV.mprecipecsv</Object>
+    <Object Type="File" Description="Recipe file manager configuration">RecipeFile.mpfilemanagerui</Object>
   </Objects>
 </Package>

@@ -2,12 +2,10 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXCurrent_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXCurrent_content.eventbinding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXHistory_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXHistory_content.eventbinding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXQuery_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\Navigation_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\Navigation_content.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXCurrent.binding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXCurrent.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXHistory.binding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXHistory.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\AlarmX\AlarmXQuery.binding</Object>
   </Objects>
 </Package>

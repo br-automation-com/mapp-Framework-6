@@ -2,12 +2,11 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisAuto_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisManual_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisRecipe_content.eventbinding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisRecipeDialog_Edit_content.eventbinding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisRecipeDialog_New_content.eventbinding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\Navigation_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\Navigation_content.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\Axis.binding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisAuto.binding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisManual.binding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisRecipe.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisRecipeDialogEdit.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Axis\AxisRecipeDialogNew.eventbinding</Object>
   </Objects>
 </Package>

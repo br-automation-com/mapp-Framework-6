@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="Navigation" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>		 
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NavigationAlarmActive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Navigation" widgetRefId="LoadAlarmContent" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NavigationRecipeActive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Navigation" widgetRefId="LoadRecipeContent" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NavigationUserActive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Navigation" widgetRefId="LoadUserContent" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NavigationBackupActive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Navigation" widgetRefId="LoadBackupContent" attribute="visible" />
+		</Binding>				
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NavigationFileActive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Navigation" widgetRefId="LoadFileContent" attribute="visible" />
+		</Binding>				
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NavigationAxisActive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Navigation" widgetRefId="LoadAxisContent" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NavigationAuditActive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Navigation" widgetRefId="LoadAuditContent" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NavigationReportActive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Navigation" widgetRefId="LoadReportContent" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NavigationPackMLActive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Navigation" widgetRefId="LoadPackMLContent" attribute="visible" />
+		</Binding>
+	</Bindings>
+</BindingsSet>

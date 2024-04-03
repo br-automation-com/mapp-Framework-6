@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="CustomEvents_content" guid="1033c3d9-3472-422a-b26f-3e96e6d103c9" height="620" width="1120" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Content id="CustomEvents" guid="1033c3d9-3472-422a-b26f-3e96e6d103c9" height="620" width="1120" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.PushButton" id="PushBtnSortAuditCustomEvents" top="5" left="0" width="120" zIndex="2" image="Media/mappFrameworkSymbols/Edit/sort.svg" text="$IAT/mappFramework/Audit/Sort" imageHeight="20" imageWidth="20" style="transparent" />
     <Widget xsi:type="widgets.brease.PushButton" id="PushBtnFilterAuditCustomEvents" top="5" left="140" width="120" zIndex="3" image="Media/mappFrameworkSymbols/Edit/Filter.svg" text="$IAT/mappFramework/Audit/Filter" imageHeight="20" imageWidth="20" style="transparent" />

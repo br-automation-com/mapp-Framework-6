@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gMpLinkAuditTrail_Query" Type="mpauditquery">
+    <Group ID="Queries">
+      <Group ID="0">
+        <Property ID="Name" Value="RecipeEvents" />
+        <Property ID="Update" Value="::AuditMgr:AuditQuery.UpdateCountRecipe" />
+        <Property ID="Component" Value="gMpLinkAuditTrail" />
+        <Group ID="SELECT">
+          <Group ID="0">
+            <Property ID="Column" Value="op" />
+            <Property ID="PV" Value="::AuditMgr:AuditQuery.Audits[].Op" />
+          </Group>
+          <Group ID="1">
+            <Property ID="Column" Value="evtime" />
+            <Property ID="PV" Value="::AuditMgr:AuditQuery.Audits[].EvTime" />
+          </Group>
+          <Group ID="2">
+            <Property ID="Column" Value="dtext" />
+            <Property ID="PV" Value="::AuditMgr:AuditQuery.Audits[].DText" />
+          </Group>
+          <Group ID="3">
+            <Property ID="Column" Value="text" />
+            <Property ID="PV" Value="::AuditMgr:AuditQuery.Audits[].Text" />
+          </Group>
+        </Group>
+        <Group ID="WHERE">
+          <Property ID="Connect" Value="AND" />
+          <Group ID="0">
+            <Property ID="Column" Value="ev" />
+            <Property ID="Operator" Value="ge" />
+            <Selector ID="CompareTo" Value="Value">
+              <Property ID="Value" Value="700" />
+            </Selector>
+          </Group>
+          <Group ID="1">
+            <Property ID="Column" Value="ev" />
+            <Property ID="Operator" Value="lt" />
+            <Selector ID="CompareTo" Value="Value">
+              <Property ID="Value" Value="750" />
+            </Selector>
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="1">
+        <Property ID="Name" Value="UserEvents" />
+        <Property ID="Update" Value="::AuditMgr:AuditQuery.UpdateCount" />
+        <Property ID="Component" Value="gMpLinkAuditTrail" />
+        <Group ID="SELECT">
+          <Group ID="0">
+            <Property ID="Column" Value="op" />
+            <Property ID="PV" Value="::AuditMgr:AuditQuery.Audits[].Op" />
+          </Group>
+          <Group ID="1">
+            <Property ID="Column" Value="evtime" />
+            <Property ID="PV" Value="::AuditMgr:AuditQuery.Audits[].EvTime" />
+          </Group>
+          <Group ID="2">
+            <Property ID="Column" Value="dtext" />
+            <Property ID="PV" Value="::AuditMgr:AuditQuery.Audits[].DText" />
+          </Group>
+          <Group ID="3">
+            <Property ID="Column" Value="text" />
+            <Property ID="PV" Value="::AuditMgr:AuditQuery.Audits[].Text" />
+          </Group>
+        </Group>
+        <Group ID="WHERE">
+          <Property ID="Connect" Value="AND" />
+          <Group ID="0">
+            <Property ID="Column" Value="ev" />
+            <Property ID="Operator" Value="ge" />
+            <Selector ID="CompareTo" Value="Value">
+              <Property ID="Value" Value="100" />
+            </Selector>
+          </Group>
+          <Group ID="1">
+            <Property ID="Column" Value="ev" />
+            <Property ID="Operator" Value="lt" />
+            <Selector ID="CompareTo" Value="Value">
+              <Property ID="Value" Value="400" />
+            </Selector>
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

@@ -23,6 +23,8 @@ PROGRAM _INIT
 	// Initialize mapp function blocks
 	MpAuditTrailSys.Enable := TRUE;
 	MpAuditTrailSys.MpLink := ADR(gMpLinkAuditTrail);
+	HmiAudit.Parameters.FileName := 'Archive_%Y_%m_%d_%H_%M_%S';
+	MpAuditTrailSys.FileName := ADR(HmiAudit.Parameters.FileName); 
 	MpAuditTrailSys.Language := ADR('en');
 	MpAuditTrailSys.DeviceName := ADR('mappAuditFiles');
 	MpAuditTrailSys();
@@ -109,6 +111,8 @@ PROGRAM _CYCLIC
 	// Assign MpLinks & address references
 	MpAuditTrailSys.MpLink := ADR(gMpLinkAuditTrail);
 	MpAuditTrailSys.DeviceName := ADR('mappAuditFiles');
+	MpAuditTrailSys.FileName := ADR(HmiAudit.Parameters.FileName); 
+	MpAuditTrailSys.Language := ADR('en');
 	#warning "USER WRN: TODO: replace config FB"
    // MpAuditTrailConfigSys.MpLink := ADR(gMpLinkAuditTrail);
 	//MpAuditTrailConfigSys.Configuration := ADR(AuditTrailConfig);

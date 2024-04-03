@@ -2,12 +2,12 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" TransferedForTargetSourceCompare="true">AlmXCore.mpalarmxcore</Object>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" TransferedForTargetSourceCompare="true">AlmXCat.mpalarmxcategory</Object>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" TransferedForTargetSourceCompare="true">AlmXLst1.mpalarmxlist</Object>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" TransferedForTargetSourceCompare="true">AlmXLst2.mpalarmxlist</Object>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" TransferedForTargetSourceCompare="true">AlmXLst3.mpalarmxlist</Object>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" TransferedForTargetSourceCompare="true">AlmXQry.mpalarmxquery</Object>
-    <Object Type="File" Description="Migrated from AlarmXHist.mpalarmxhistory (mapp Services Version 5)" TransferedForTargetSourceCompare="true">AlmXHCfg.mpalarmxhistory</Object>
+    <Object Type="File" Description="Core alarm configuration" TransferedForTargetSourceCompare="true">AlmXCore.mpalarmxcore</Object>
+    <Object Type="File" Description="Configuration for alarm categories" TransferedForTargetSourceCompare="true">AlmXCat.mpalarmxcategory</Object>
+    <Object Type="File" Description="Configuration for machine alarms" TransferedForTargetSourceCompare="true">AlmXLst1.mpalarmxlist</Object>
+    <Object Type="File" Description="Configuration for alarm examples" TransferedForTargetSourceCompare="true">AlmXLst2.mpalarmxlist</Object>
+    <Object Type="File" Description="Configuration for user alarms" TransferedForTargetSourceCompare="true">AlmXLst3.mpalarmxlist</Object>
+    <Object Type="File" Description="Configuration for alarm queries" TransferedForTargetSourceCompare="true">AlmXQry.mpalarmxquery</Object>
+    <Object Type="File" Description="Core alarm history configuration" TransferedForTargetSourceCompare="true">AlmXHCfg.mpalarmxhistory</Object>
   </Objects>
 </Package>

@@ -3,6 +3,6 @@
 <Package SubType="DialogPackage" PackageType="DialogPackage" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File" Description="Dialog">UserXExport.dialog</Object>
-    <Object Type="File">UserXDialog_Export.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">UserXDialogExport.content</Object>
   </Objects>
 </Package>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="AuditQuery" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::AuditMgr:HmiAudit.Status.Query.Text" attribute="value" />
+      <Target xsi:type="brease" contentRefId="AuditQuery" widgetRefId="TableItemAuditQueryMessage" attribute="stringValue" />
+    </Binding>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::AuditMgr:HmiAudit.Status.Query.Op" attribute="value" />
+      <Target xsi:type="brease" contentRefId="AuditQuery" widgetRefId="TableItemAuditQueryOperator" attribute="stringValue" />
+    </Binding>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::AuditMgr:HmiAudit.Commands.RunQuery" attribute="value" />
+      <Target xsi:type="brease" contentRefId="AuditQuery" widgetRefId="PushBtnRunAuditQuery" attribute="value" />
+    </Binding>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::AuditMgr:HmiAudit.Status.Query.EvTime" attribute="value" />
+      <Target xsi:type="brease" contentRefId="AuditQuery" widgetRefId="TableItemAuditQueryDateTime" attribute="value" />
+    </Binding>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::AuditMgr:HmiAudit.Status.TableConfig[0]" attribute="value" />
+      <Target xsi:type="brease" contentRefId="AuditQuery" widgetRefId="TableAuditQuery" attribute="tableConfiguration" />
+    </Binding>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::AuditMgr:HmiAudit.Status.Query.Name" attribute="value" />
+      <Target xsi:type="brease" contentRefId="AuditQuery" widgetRefId="DropDownAuditQuerySelect" attribute="selectedValue" />
+    </Binding>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::AuditMgr:HmiAudit.Status.DeviceDataProvider" attribute="value" />
+      <Target xsi:type="brease" contentRefId="AuditQuery" widgetRefId="DropDownAuditQuerySelect" attribute="dataProvider" />
+    </Binding>
+  </Bindings>
+</BindingsSet>

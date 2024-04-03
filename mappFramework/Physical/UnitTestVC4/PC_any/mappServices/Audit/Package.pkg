@@ -2,10 +2,9 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Description="Migrated from AuditCfg.mpaudittrail (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\Audit\AuditCfg_Q.mpauditquery</Object>
-    <Object Type="File" Description="Migrated from AuditCfg.mpaudittrail (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\Audit\AuditCfg_T.mpaudittrail</Object>
-    <Object Type="File" Description="Migrated from CustomCfg.mpaudittrail (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\Audit\CustomCf_1.mpauditquery</Object>
-    <Object Type="File" Description="Migrated from CustomCfg.mpaudittrail (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\Audit\CustomCfg_.mpaudittrail</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappServices\Audit\UnitCfg.mpcomunit</Object>
+    <Object Type="File" Description="Core audit configuration" Reference="true">\Physical\Simulation\PC\mappServices\Audit\AuditCfg.mpaudittrail</Object>
+    <Object Type="File" Description="Configuration for audit queries" Reference="true">\Physical\Simulation\PC\mappServices\Audit\AuditQuery.mpauditquery</Object>
+    <Object Type="File" Description="Configuration for custom audit events" Reference="true">\Physical\Simulation\PC\mappServices\Audit\CustomCfg.mpaudittrail</Object>
+    <Object Type="File" Description="User unit configuration" Reference="true">\Physical\Simulation\PC\mappServices\Audit\UnitCfg.mpcomunit</Object>
   </Objects>
 </Package>

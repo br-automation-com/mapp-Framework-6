@@ -102,6 +102,8 @@ PROGRAM _CYCLIC
 	MpAlarmXListUIMain.UIConnect := ADR(MpAlarmXListUIConnect);
 	MpAlarmXHistoryMain.MpLink := ADR(gMpLinkAlarmXHistory);
 	MpAlarmXHistoryMain.DeviceName := ADR('mappAlarmXFiles');
+	MpAlarmXHistoryMain.FileName := ADR(HmiAlarmX.Parameters.FileName);
+	MpAlarmXHistoryMain.Language := ADR(HmiAlarmX.Parameters.Language);
 	MpAlarmXHistoryUIMain.MpLink := ADR(gMpLinkAlarmXHistory);
 	MpAlarmXHistoryUIMain.UIConnect := ADR(MpAlarmXHistoryUIConnect);
 

@@ -2,6 +2,8 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Description="Migrated from PackMLCfg.mppackmlcore (mapp Services Version 5)">PackMLCf_1.mppackmlstandaloneunit</Object>
+    <Object Type="File" Description="Core PackML synchronized configuration" Reference="true">\Physical\Simulation\PC\mappServices\PackML\PackMLCfg.mppackmlsynchronizedunit</Object>
+    <Object Type="File" Description="PackML module configuration" Reference="true">\Physical\Simulation\PC\mappServices\PackML\PackMLMain.mppackmlsynchronizedmodule</Object>
+    <Object Type="File" Description="Core PackML stand-alone configuration" Reference="true">\Physical\Simulation\PC\mappServices\PackML\PackMLUnit.mppackmlstandaloneunit</Object>
   </Objects>
 </Package>

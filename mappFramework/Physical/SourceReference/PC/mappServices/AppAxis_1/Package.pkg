@@ -2,7 +2,10 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappServices\AppAxis_1\Axis1Alm.mpalarmxcore</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappServices\AppAxis_1\Axis1Grp.mpcomgroup</Object>
+    <Object Type="File" Description="Configuration for alarm categories on axis" Reference="true">\Physical\Simulation\PC\mappServices\AppAxis_1\Axis1Alm_1.mpalarmxcategory</Object>
+    <Object Type="File" Description="Core alarm configuration for axis" Reference="true">\Physical\Simulation\PC\mappServices\AppAxis_1\Axis1Alm_C.mpalarmxcore</Object>
+    <Object Type="File" Description="Configuration for additional axis alarms" Reference="true">\Physical\Simulation\PC\mappServices\AppAxis_1\Axis1Alm_L.mpalarmxlist</Object>
+    <Object Type="File" Description="Configuration for alarm queries on axis" Reference="true">\Physical\Simulation\PC\mappServices\AppAxis_1\Axis1Alm_Q.mpalarmxquery</Object>
+    <Object Type="File" Description="Group configuration" Reference="true">\Physical\Simulation\PC\mappServices\AppAxis_1\Config_1.mpcomlink</Object>
   </Objects>
 </Package>

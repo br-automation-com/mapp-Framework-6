@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="UserList_content" guid="58fc3fbb-e606-4dcd-be81-4374b2e71ac9" height="660" width="1120" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Content id="UserList" guid="58fc3fbb-e606-4dcd-be81-4374b2e71ac9" height="660" width="1120" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.UserList" id="UserListManagement" top="50" left="30" width="850" height="410" zIndex="0" itemsPerPage="15" borderStyle="solid" borderColor="rgba(0, 0, 0, 1)" permissionOperate="['Administrators']">
       <Widgets>

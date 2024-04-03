@@ -2,14 +2,12 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditDialog_ArchiveSettings_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditDialog_ArchiveSettings_content.eventbinding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditQuery_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditTrail_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditTrail_content.eventbinding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\CustomEvents_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\CustomEvents_content.eventbinding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\Navigation_content.binding</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\Navigation_content.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditDialogArchiveSettings.binding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditDialogArchiveSettings.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditQuery.binding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditTrail.binding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\AuditTrail.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\CustomEvents.binding</Object>
+    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappView\Audit\CustomEvents.eventbinding</Object>
   </Objects>
 </Package>

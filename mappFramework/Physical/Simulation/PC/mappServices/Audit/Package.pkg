@@ -2,10 +2,9 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">UnitCfg.mpcomunit</Object>
-    <Object Type="File" Description="Migrated from AuditCfg.mpaudittrail (mapp Services Version 5)">AuditCfg_T.mpaudittrail</Object>
-    <Object Type="File" Description="Migrated from AuditCfg.mpaudittrail (mapp Services Version 5)">AuditCfg_Q.mpauditquery</Object>
-    <Object Type="File" Description="Migrated from CustomCfg.mpaudittrail (mapp Services Version 5)">CustomCfg_.mpaudittrail</Object>
-    <Object Type="File" Description="Migrated from CustomCfg.mpaudittrail (mapp Services Version 5)">CustomCf_1.mpauditquery</Object>
+    <Object Type="File" Description="User unit configuration">UnitCfg.mpcomunit</Object>
+    <Object Type="File" Description="Core audit configuration" TransferedForTargetSourceCompare="true">AuditCfg.mpaudittrail</Object>
+    <Object Type="File" Description="Configuration for audit queries" TransferedForTargetSourceCompare="true">AuditQuery.mpauditquery</Object>
+    <Object Type="File" Description="Configuration for custom audit events" TransferedForTargetSourceCompare="true">CustomCfg.mpaudittrail</Object>
   </Objects>
 </Package>

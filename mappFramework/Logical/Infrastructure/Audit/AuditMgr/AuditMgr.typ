@@ -48,6 +48,7 @@ TYPE
 	AuditParametersType : 	STRUCT  (*Structure to hold parameter data for the HMI*)
 		ArchiveSettings : AuditArchiveParType; (*Parameter for archive configuration*)
 		QuerySelection : ARRAY[0..MAX_QUERIES]OF STRING[10]; (*The selection in the query dropdown on the query tab of the Audit content*)
+		FileName : STRING[255]; (*File name for archive and regular exports*)
 	END_STRUCT;
 	AuditArchiveParType : 	STRUCT  (*Automatic archive settings*)
 		Enable : BOOL; (*Enable automatic archive feature*)

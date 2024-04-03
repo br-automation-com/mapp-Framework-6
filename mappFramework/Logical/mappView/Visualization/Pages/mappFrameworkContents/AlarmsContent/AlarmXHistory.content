@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="AlarmXHistory_content" guid="459ff3fc-ee3d-438d-a42f-e29ffd5790fc" height="620" width="1120" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Content id="AlarmXHistory" guid="459ff3fc-ee3d-438d-a42f-e29ffd5790fc" height="620" width="1120" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHist" top="40" left="0" width="1120" height="580" zIndex="0" format="yyyy-MM-dd hh:mm" imagePrefix="Media/mappFrameworkSymbols/Alarm/" itemsPerPage="9" searchBox="false" rowHeight="60" fontSize="16px">
       <Widgets>

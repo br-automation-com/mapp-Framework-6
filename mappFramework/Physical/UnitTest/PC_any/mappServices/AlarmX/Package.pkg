@@ -2,12 +2,12 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXCat.mpalarmxcategory</Object>
-    <Object Type="File" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXCore.mpalarmxcore</Object>
-    <Object Type="File" Description="Migrated from AlarmXHist.mpalarmxhistory (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXHCfg.mpalarmxhistory</Object>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXLst1.mpalarmxlist</Object>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXLst2.mpalarmxlist</Object>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXLst3.mpalarmxlist</Object>
-    <Object Type="File" Description="Migrated from AlarmXCfg.mpalarmxcore (mapp Services Version 5)" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXQry.mpalarmxquery</Object>
+    <Object Type="File" Description="Configuration for alarm categories" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXCat.mpalarmxcategory</Object>
+    <Object Type="File" Description="Core alarm configuration" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXCore.mpalarmxcore</Object>
+    <Object Type="File" Description="Core alarm history configuration" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXHCfg.mpalarmxhistory</Object>
+    <Object Type="File" Description="Configuration for machine alarms" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXLst1.mpalarmxlist</Object>
+    <Object Type="File" Description="Configuration for alarm examples" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXLst2.mpalarmxlist</Object>
+    <Object Type="File" Description="Configuration for user alarms" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXLst3.mpalarmxlist</Object>
+    <Object Type="File" Description="Configuration for alarm queries" Reference="true">\Physical\Simulation\PC\mappServices\AlarmX\AlmXQry.mpalarmxquery</Object>
   </Objects>
 </Package>

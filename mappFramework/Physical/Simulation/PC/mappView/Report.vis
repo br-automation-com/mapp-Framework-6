@@ -1,37 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vdef:Visualization id="MyVisuReport" autoUpdate="false" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-  <StartPage pageRefId="Demo_page" />
+  <StartPage pageRefId="Demo" />
   <Pages>
-    <Page refId="Demo_page" />
+    <Page refId="Demo" />
   </Pages>
   <Navigations />
   <BindingsSets>
-    <BindingsSet refId="Report_Navigation_content_binding" />
-    <BindingsSet refId="Report_content_binding" />
-    <BindingsSet refId="ReportDialog_View_content_binding" />
-    <BindingsSet refId="ReportDialog_Create_content_binding" />
+    <BindingsSet refId="Navigation" />
+    <BindingsSet refId="Report" />
+    <BindingsSet refId="ReportDialogView" />
+    <BindingsSet refId="ReportDialogCreate" />
   </BindingsSets>
   <EventBindingsSets>
-    <EventBindingsSet refId="Report_Navigation_content_eventbinding" />
-    <EventBindingsSet refId="ReportDialog_Create_content_eventbinding" />
-    <EventBindingsSet refId="ReportDialog_Delete_content_eventbinding" />
-    <EventBindingsSet refId="Report_content_eventbinding" />
-    <EventBindingsSet refId="ReportDialog_View_content_eventbinding" />
+    <EventBindingsSet refId="Navigation" />
+    <EventBindingsSet refId="ReportDialogCreate" />
+    <EventBindingsSet refId="ReportDialogDelete" />
+    <EventBindingsSet refId="Report" />
+    <EventBindingsSet refId="ReportDialogView" />
   </EventBindingsSets>
   <Dialogs>
-    <Dialog refId="ReportCreate_dialog" />
-    <Dialog refId="ReportDelete_dialog" />
-    <Dialog refId="ReportView_dialog" />
+    <Dialog refId="ReportCreate" />
+    <Dialog refId="ReportDelete" />
+    <Dialog refId="ReportView" />
   </Dialogs>
   <Contents>
-    <Content refId="Report_content" />
-    <Content refId="ReportDialog_Create_content" />
-    <Content refId="ReportDialog_Delete_content" />
-    <Content refId="ReportDialog_View_content" />
+    <Content refId="Report" />
+    <Content refId="ReportDialogCreate" />
+    <Content refId="ReportDialogDelete" />
+    <Content refId="ReportDialogView" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
-    <VariablesSet refId="Report_svar" />
+    <VariablesSet refId="Report" />
+    <VariablesSet refId="Navigation" />
   </VariablesSets>
   <ExpressionsSets />
   <StartTheme themeRefId="BuRThemeFlat1" />

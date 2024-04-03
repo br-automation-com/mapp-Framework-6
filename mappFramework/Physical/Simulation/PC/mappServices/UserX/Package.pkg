@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Description="Migrated from UserXlogin.mpuserxlogin (mapp Services Version 5)">UserXlogin.mpuserxlogin</Object>
-    <Object Type="File" Description="Migrated from UserXCfg.mpuserx (mapp Services Version 5)">UserXCfg.mpuserx</Object>
+    <Object Type="File" Description="Core user login configuration">UserXlogin.mpuserxlogin</Object>
+    <Object Type="File" Description="Core user configuration">UserXCfg.mpuserx</Object>
   </Objects>
 </Package>
